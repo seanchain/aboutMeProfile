@@ -8021,6 +8021,10 @@ form.contribute-tweet input[type="text"] {
         font-size: 16px; } }
 
 #homepage-hero {
+
+    -moz-box-shadow: 10px 10px 5px rgba(0,0,0,.4);
+    -webkit-box-shadow: 10px 10px 5px rgba(0,0,0,.4);
+    box-shadow: 10px 10px 5px rgba(0,0,0,.4);
   background: url(./profile.jpg);
   height: 650px;
   text-align: left;
