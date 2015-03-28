@@ -7649,12 +7649,12 @@ header {
   font-weight: bold; }
 
 #main-content {
-    padding: 50px 0 0 50px;
+    padding: 50px 0 50px 0;
 }
   @media screen and (max-width: 768px) {
     #main-content {
-      /*margin: 20px 0 20px;*/
-      padding-bottom: 0px; } }
+    }
+  }
 
 .subheader, .lead {
   font-size: 1.125rem;
