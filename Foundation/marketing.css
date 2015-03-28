@@ -128,7 +128,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "SinaNova-Regular", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -7594,12 +7594,12 @@ ul.off-canvas-list li#gs .button {
   font-style: normal; }
 
 body {
-     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "SinaNova-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+  font-family: "SinaNova-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 h1, h2, h3, h4 {
   font-weight: 300; }
