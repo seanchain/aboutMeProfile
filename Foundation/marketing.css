@@ -7648,7 +7648,22 @@ header {
   -moz-box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
   font-weight: bold; }
 
+.icon-covered{
+    border-radius: 3px;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    background-color: RGBA(16, 22, 26, 1);
+}
+
+#excessive-content{
+    padding: 12px 0 10px 0;
+    background-color: RGBA(34, 45, 54, 1);
+}
+
 #main-content {
+    -moz-box-shadow: 10px 10px 5px rgba(0,0,0,.4);
+    -webkit-box-shadow: 10px 10px 5px rgba(0,0,0,.4);
+    box-shadow: 10px 10px 5px rgba(0,0,0,.4);
     padding: 50px 0 50px 0;
 }
   @media screen and (max-width: 768px) {
