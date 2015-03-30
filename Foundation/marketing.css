@@ -7653,12 +7653,10 @@ header {
     border-radius: 3px;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
-    background-color: RGBA(16, 22, 26, 1);
 }
 
 #excessive-content{
     padding: 12px 0 10px 0;
-    background-color: RGBA(34, 45, 54, 1);
 }
 
 #main-content {

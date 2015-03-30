@@ -116,21 +116,24 @@
 </div>
     <br/><br/>
 </section>
-    <section id="excessive-content">
+    <section id="excessive-content" style="background-color: RGBA(34, 45, 54, 1);">
         <div class="row">
             <div class="small-1 columns"></div>
             <div class="small-11 columns">
                 <span data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000" id="qc">
-                    <img class="icon-covered" src="./foundation/exchange.png" width="30px" alt=""/></span>
+                    <img id="qi" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
+                         src="./foundation/exchange.png" width="30px" alt=""/></span>
                 <div id="hover1" class="f-dropdown" data-dropdown-content>
                     <h5>Quote Exchange</h5>
                 </div>
                 &nbsp;&nbsp;
                 <span data-dropdown="hover2" data-options="is_hover:true; hover_timeout:5000" id="cc">
-                    <img class="icon-covered" src="./foundation/color.png" width="30px" alt=""/></span>
+                    <img id="ci" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
+                         src="./foundation/color.png" width="30px" alt=""/></span>
                 <div id="hover2" class="f-dropdown" data-dropdown-content>
                     <h5>Scheme Exchange</h5>
                 </div>
+                <input type="hidden" value="0" id="count"/>
             </div>
         </div>
     </section>
@@ -142,11 +145,11 @@
     <br/>
 </section>
  
-<section id="main-content">
+<section id="main-content1">
 <h1>Your work or Education history Here</h1>
 </section>
 
-<section id="main-content">
+<section id="main-content2">
 <h1>Your location Here</h1>
 </section>
  
@@ -175,7 +178,41 @@ Other links of your sites here.
         });
 
         $("#cc").click(function(){
-           alert("123");
+            var count = $("#count").attr("value");
+            count = parseInt(count) + 1;
+            if(count % 5 == 0){
+                $("#main-content").attr("style", "background-color:RGBA(70, 36, 36, 1);");
+                $("#qi").attr("style", "background-color:RGBA(29, 14, 14, 1);");
+                $("#ci").attr("style", "background-color:RGBA(29, 14, 14, 1);");
+                $("#excessive-content").attr("style", "background-color:RGBA(59, 30, 30, 1)");
+            }
+            else if (count % 5 == 1){
+                $("#main-content").attr("style", "background-color:RGBA(78, 78, 57, 1);");
+                $("#qi").attr("style", "background-color:RGBA(32, 32, 23, 1);");
+                $("#ci").attr("style", "background-color:RGBA(32, 32, 23, 1);");
+                $("#excessive-content").attr("style", "background-color:RGBA(66, 66, 48, 1)");
+            }
+            else if (count % 5 == 2){
+                $("#main-content").attr("style", "background-color:RGBA(78, 78, 57, 1);");
+                $("#qi").attr("style", "background-color:RGBA(32, 32, 23, 1);");
+                $("#ci").attr("style", "background-color:RGBA(32, 32, 23, 1);");
+                $("#excessive-content").attr("style", "background-color:RGBA(66, 66, 48, 1)");
+            }
+            else if (count % 5 == 3){
+                $("#main-content").attr("style", "background-color:RGBA(88, 69, 85, 1);");
+                $("#qi").attr("style", "background-color:RGBA(36, 28, 35, 1);");
+                $("#ci").attr("style", "background-color:RGBA(36, 28, 35, 1);");
+                $("#excessive-content").attr("style", "background-color:RGBA(74, 58, 72, 1)");
+            }
+            else if (count % 5 == 4){
+                $("#main-content").attr("style", "background-color:RGBA(55, 85, 73, 1);");
+                $("#qi").attr("style", "background-color:RGBA(22, 35, 30, 1);");
+                $("#ci").attr("style", "background-color:RGBA(22, 35, 30, 1);");
+                $("#excessive-content").attr("style", "background-color:RGBA(46, 72, 62, 1);");
+            }
+            count = count.toString();
+            $("#count").attr("value", count);
+
         });
     });
 
