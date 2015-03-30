@@ -2340,6 +2340,7 @@ button::-moz-focus-inner {
 
 /* Foundation Dropdowns */
 .f-dropdown {
+    padding: 5px 0 5px 5px;
   position: absolute;
   left: -9999px;
   list-style: none;
@@ -2352,7 +2353,7 @@ button::-moz-focus-inner {
   border: solid 1px #cccccc;
   font-size: 0.875rem;
   z-index: 89;
-  margin-top: 2px;
+  margin-top: 20px;
   max-width: 200px; }
   .f-dropdown > *:first-child {
     margin-top: 0; }
@@ -9207,4 +9208,19 @@ p.lead {
 
 .small-icon{
     width: 32px;
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+    border: none;
+    outline: none;
+    text-decoration: dotted white underline;
+}
+
+
+.sel::selection{
+    background-color: black;
+}
+.sel::-moz-selection{
+    background-color: black;
 }

@@ -120,16 +120,25 @@
         <div class="row">
             <div class="small-1 columns"></div>
             <div class="small-11 columns">
-                <img class="icon-covered" src="./foundation/exchange.png" width="30px" alt=""/>
-                <img class="icon-covered small-offset-1" src="./foundation/color.png" width="30px" alt=""/>
+                <span data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000" id="qc">
+                    <img class="icon-covered" src="./foundation/exchange.png" width="30px" alt=""/></span>
+                <div id="hover1" class="f-dropdown" data-dropdown-content>
+                    <h5>Quote Exchange</h5>
+                </div>
+                &nbsp;&nbsp;
+                <span data-dropdown="hover2" data-options="is_hover:true; hover_timeout:5000" id="cc">
+                    <img class="icon-covered" src="./foundation/color.png" width="30px" alt=""/></span>
+                <div id="hover2" class="f-dropdown" data-dropdown-content>
+                    <h5>Scheme Exchange</h5>
+                </div>
             </div>
         </div>
     </section>
 <section id="main-content" style="background-color: RGBA(40, 53, 64, 1);">
     <br/>
-    <h2 class="small-5 small-centered columns" style="color: white;">“Bleibt Jung, bleibt Simpel”</h2>
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;">“Talk is cheap, show me the code”</h2>
     <br />
-    <h2 class="small-5 small-centered columns" style="color: white;">– Senoiren</h2>
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;">– Linus Torvalds</h2>
     <br/>
 </section>
  
@@ -153,6 +162,25 @@ Other links of your sites here.
 <footer class="zurb-footer-bottom">
     <h4 style="color: white">More details will be added later</h4>
 </footer>
+    </div>
+</div>
 
+<script src="Foundation/jquery.min.js"></script>
 <script src="Foundation/templates.js"></script>
 <script src="Foundation/marketing.js"></script>
+<script>
+    $().ready(function () {
+        $("#qc").click(function(){
+            alert("Hello, world");
+        });
+
+        $("#cc").click(function(){
+           alert("123");
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
