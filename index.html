@@ -134,14 +134,15 @@
                     <h5>Scheme Exchange</h5>
                 </div>
                 <input type="hidden" value="0" id="count"/>
+                <input type="hidden" value="0" id="quotecount"/>
             </div>
         </div>
     </section>
 <section id="main-content" style="background-color: RGBA(40, 53, 64, 1);">
     <br/>
-    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;">“Talk is cheap, show me the code”</h2>
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-content">“Talk is cheap, show me the code”</h2>
     <br />
-    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;">– Linus Torvalds</h2>
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-author">– Linus Torvalds</h2>
     <br/>
 </section>
  
@@ -174,7 +175,30 @@ Other links of your sites here.
 <script>
     $().ready(function () {
         $("#qc").click(function(){
-            alert("Hello, world");
+            var count = $("#quotecount").attr("value");
+            count = parseInt(count) + 1;
+            if(count % 5 == 0){
+                $("#quote-content").text("“You have to accept whatever comes, and the only important thing is that you meet it with the best you have to give.”");
+                $("#quote-author").text("– Eleanor Roosevelt");
+            }
+            else if (count % 5 == 1){
+                $("#quote-content").text("“There is only one success: to be able to spend your life in your own way.”");
+                $("#quote-author").text("– Christopher Morley");
+            }
+            else if (count % 5 == 2){
+                $("#quote-content").text("“Make each day your masterpiece.”");
+                $("#quote-author").text("– John Wooden");
+            }
+            else if (count % 5 == 3){
+                $("#quote-content").text("“The only place success comes before work is in the dictionary.”");
+                $("#quote-author").text("– Vince Lombardi");
+            }
+            else if (count % 5 == 4){
+                $("#quote-content").text("“Talk is cheap, show me the code”");
+                $("#quote-author").text("– Linus Torvalds");
+            }
+            count = count.toString();
+            $("#quotecount").attr("value", count);
         });
 
         $("#cc").click(function(){
@@ -212,7 +236,6 @@ Other links of your sites here.
             }
             count = count.toString();
             $("#count").attr("value", count);
-
         });
     });
 
