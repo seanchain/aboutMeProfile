@@ -65,4 +65,24 @@ $().ready(function () {
         count = count.toString();
         $("#count").attr("value", count);
     });
+
+    $("#job").blur(function () {
+        var $element = $(this);
+        if ($element.text() == "") {
+            $element.empty();
+        }
+    });
+    $("#comp").blur(function () {
+        var $element = $(this);
+        if ($element.text() == "") {
+            $element.empty();
+        }
+    });
+    $("#achie").blur(function () {
+        var $element = $(this);
+        if ($element.text() == "") {
+            $element.empty();
+        }
+    });
+
 });
