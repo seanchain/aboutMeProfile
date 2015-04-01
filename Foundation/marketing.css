@@ -9240,3 +9240,14 @@ p.lead {
 .sel::-moz-selection{
     background-color: black;
 }
+
+#cardheader{
+    margin-bottom: 20px;
+}
+
+#job{
+    font-size: 2em;
+    font-weight: bold;
+    color:RGBA(21, 186, 249, 1);
+
+}

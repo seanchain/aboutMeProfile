@@ -66,23 +66,17 @@ $().ready(function () {
         $("#count").attr("value", count);
     });
 
-    $("#job").blur(function () {
-        var $element = $(this);
-        if ($element.text() == "") {
-            $element.empty();
-        }
+    $(".cur-per").focus(function(){
+       $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
     });
-    $("#comp").blur(function () {
+
+
+    $(".cur-per").blur(function () {
         var $element = $(this);
         if ($element.text() == "") {
             $element.empty();
         }
-    });
-    $("#achie").blur(function () {
-        var $element = $(this);
-        if ($element.text() == "") {
-            $element.empty();
-        }
+        $(this).css("background-color", "white");
     });
 
 });
