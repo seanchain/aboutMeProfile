@@ -79,4 +79,17 @@ $().ready(function () {
         $(this).css("background-color", "white");
     });
 
+    $('div').on('focus', ".prev-job", function () {
+        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
+    });
+
+
+    $('div').on('blur', ".prev-job", function () {
+        var $element = $(this);
+        if ($element.text() == "") {
+            $element.empty();
+        }
+        $(this).css("background-color", "white");
+    });
+
 });

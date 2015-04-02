@@ -124,14 +124,14 @@
             <div class="small-11 columns">
                 <span data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000" id="qc">
                     <img id="qi" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
-                         src="./foundation/exchange.png" width="30px" alt=""/></span>
+                         src="./images/exchange.png" width="30px" alt=""/></span>
                 <div id="hover1" class="f-dropdown" data-dropdown-content>
                     <h5>Quote Exchange</h5>
                 </div>
                 &nbsp;&nbsp;
                 <span data-dropdown="hover2" data-options="is_hover:true; hover_timeout:5000" id="cc">
                     <img id="ci" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
-                         src="./foundation/color.png" width="30px" alt=""/></span>
+                         src="./images/color.png" width="30px" alt=""/></span>
                 <div id="hover2" class="f-dropdown" data-dropdown-content>
                     <h5>Scheme Exchange</h5>
                 </div>
@@ -152,12 +152,14 @@
     <div class="rows"  ng-controller="MainCtrl">
         <div class="small-11 small-centered columns cardview" id="workprofile">
             <div id="cardheader">CURRENT ROLE</div>
-            <button workhistory>Click</button>
             <div placeholder="What's your latest role?"  contenteditable="true" class="job cur-per"></div>
             <div contenteditable="true" placeholder="Which company?" class="comp cur-per"></div>
             <div contenteditable="true" placeholder="How long have you been in this role?" class="years cur-per"></div>
             <div contenteditable="true" placeholder="Your position or achievements" class="achie cur-per"></div>
-            <workhistory></workhistory>
+        </div>
+        <div id="prev-work" class="small-11 small-centered columns cardview">
+            <button workhistory class="button success tiny">ADD WORK HISTORY</button>
+
         </div>
     </div>
 </section>
