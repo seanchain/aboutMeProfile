@@ -85,6 +85,8 @@ $().ready(function () {
     });
 
     $('div').on('blur', ".prev-per", function () {
+        var idname = $(this).attr("id");
+        console.log(idname);
         $('.del-btn').attr('style','visibility:hidden');
         var $element = $(this);
         if ($element.text() == "") {
