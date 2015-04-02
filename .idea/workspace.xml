@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f39c13c5-dd51-4c51-8026-c3e81209eca8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/marketing.css" afterPath="$PROJECT_DIR$/css/marketing.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jq-app.js" afterPath="$PROJECT_DIR$/js/jq-app.js" />
     </list>
     <ignored path="aboutMeProfile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55341506" vertical-offset="2204" max-vertical-offset="3045">
-              <caret line="168" column="62" selection-start-line="168" selection-start-column="62" selection-end-line="168" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.5271454" vertical-offset="2474" max-vertical-offset="3060">
+              <caret line="185" column="38" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#span#0;n#div#1;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,7 +62,7 @@
       <file leaf-file-name="marketing.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/marketing.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.814816" vertical-offset="138755" max-vertical-offset="139410">
+            <state vertical-scroll-proportion="-17.592592" vertical-offset="138815" max-vertical-offset="139410">
               <caret line="9286" column="21" selection-start-line="9286" selection-start-column="21" selection-end-line="9286" selection-end-column="21" />
               <folding />
             </state>
@@ -72,8 +72,8 @@
       <file leaf-file-name="jq-app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jq-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.037037" vertical-offset="1280" max-vertical-offset="1905">
-              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.148148" vertical-offset="1280" max-vertical-offset="1920">
+              <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/Foundation/app.js" />
         <option value="$PROJECT_DIR$/Foundation/marketing.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/jq-app.js" />
         <option value="$PROJECT_DIR$/css/marketing.css" />
+        <option value="$PROJECT_DIR$/js/jq-app.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -101,7 +101,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
+    <option name="x" value="-95" />
     <option name="y" value="23" />
     <option name="width" value="1172" />
     <option name="height" value="732" />
@@ -196,7 +196,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="23" width="1172" height="732" extended-state="0" />
+    <frame x="-95" y="23" width="1172" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -394,17 +394,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jq-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.037037" vertical-offset="1280" max-vertical-offset="1905">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/marketing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.814816" vertical-offset="138755" max-vertical-offset="139410">
+        <state vertical-scroll-proportion="-17.592592" vertical-offset="138815" max-vertical-offset="139410">
           <caret line="9286" column="21" selection-start-line="9286" selection-start-column="21" selection-end-line="9286" selection-end-column="21" />
           <folding />
         </state>
@@ -420,10 +412,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jq-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.148148" vertical-offset="1280" max-vertical-offset="1920">
+          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55341506" vertical-offset="2204" max-vertical-offset="3045">
-          <caret line="168" column="62" selection-start-line="168" selection-start-column="62" selection-end-line="168" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.5271454" vertical-offset="2474" max-vertical-offset="3060">
+          <caret line="185" column="38" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#span#0;n#div#1;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
