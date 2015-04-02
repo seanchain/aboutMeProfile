@@ -97,5 +97,12 @@ $().ready(function () {
         $(this).css("background-color", "white");
     });
 
+    $('div').on('click', '.del-btn', function (){
+        var idname = $(this).attr("id");
+        idname = idname.split('-')[2];
+        var del_sec = "#prev-section-" + idname;
+        $(del_sec).remove();
+    });
+
 
 });
