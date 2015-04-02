@@ -79,17 +79,19 @@ $().ready(function () {
         $(this).css("background-color", "white");
     });
 
-    $('div').on('focus', ".prev-job", function () {
+    $('div').on('focus', ".prev-per", function () {
         $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
+        $('.del-btn').attr('style', 'visibility:"visible"');
     });
 
-
-    $('div').on('blur', ".prev-job", function () {
+    $('div').on('blur', ".prev-per", function () {
+        $('.del-btn').attr('style','visibility:hidden');
         var $element = $(this);
         if ($element.text() == "") {
             $element.empty();
         }
         $(this).css("background-color", "white");
     });
+
 
 });

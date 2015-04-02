@@ -9252,10 +9252,23 @@ p.lead {
 
 }
 
+.prev-job{
+    color:saddlebrown;
+    font-weight: bold;
+}
+
 .bgcolor-1{
     background-color: cadetblue;
 }
 
 #prev-work{
     padding-top: 2px;
+}
+
+.pre-cardview{
+    padding-bottom: 20px;
+}
+
+.del-btn{
+    margin-top: 10px;
 }
