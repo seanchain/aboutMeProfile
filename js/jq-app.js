@@ -80,13 +80,15 @@ $().ready(function () {
     });
 
     $('div').on('focus', ".prev-per", function () {
+        var idname = $(this).attr("id");
+        idname = idname.split('-')[2];
+        var visibleid = "#prev-btn-" + idname;
+        console.log(visibleid);
         $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
-        $('.del-btn').attr('style', 'visibility:"visible"');
+        $(visibleid).attr('style', 'visibility:"visible"');
     });
 
     $('div').on('blur', ".prev-per", function () {
-        var idname = $(this).attr("id");
-        console.log(idname);
         $('.del-btn').attr('style','visibility:hidden');
         var $element = $(this);
         if ($element.text() == "") {
