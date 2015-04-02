@@ -7669,11 +7669,11 @@ header {
 }
 
 #main-content2 {
-    padding: 0 0 50px 0;
+    padding: 0 0 0 0;
 }
 
-#main-content1 h1{
-
+#main-content3{
+    padding: 0 0 20px 0;
 }
 
 #main-content {
@@ -9273,6 +9273,12 @@ p.lead {
 
 .pre-cardview{
     padding-bottom: 5px;
+}
+
+.colored-cardview{
+    background-color:RGBA(35, 45, 54, 1);
+    padding: 50px 50px 50px 50px;
+    color: white;
 }
 
 .del-btn{
