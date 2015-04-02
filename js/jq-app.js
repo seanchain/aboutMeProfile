@@ -104,5 +104,18 @@ $().ready(function () {
         $(del_sec).remove();
     });
 
+    $("#locate-input").on("keydown",function(e){
+        var key = e.keyCode || e.charCode;
+        if(key == 13){
+            $(this).blur();
+        }
+    });
+
+    $("#locate-input").on("blur", function(){
+        var city = $("#locate-input").text();
+        var des = "http://open.mapquestapi.com/staticmap/v4/getplacemap?key=Fmjtd%7Cluu82q6a25%2C7g%3Do5-94t29z&location=" + city + "&size=950,600&type=map&zoom=13&imagetype=jpeg&showicon=red_1-1";
+        $("#locate-img").attr("src", des);
+    });
+
 
 });
