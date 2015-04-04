@@ -9306,3 +9306,48 @@ p.lead {
 .link-panel{
     padding: 20px 20px 20px 0;
 }
+
+.link-cell{
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    color: #ffffff;
+    border-radius: 3px;
+    position: relative;
+}
+
+.link-cell-icon{
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 3px;
+    background-color: RGBA(0,0,0,0.5);
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    lind-height:65px;
+    padding: 5px 5px 5px 5px;
+}
+
+.link-cell-title{
+    display: block;
+    height: 65px;
+    width: 100%;
+    background-color: rgba(255,255,255, 0.1);
+    padding-left: 80px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.link-cell-content{
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 3px;
+    display: block;
+}
+
+.link-cell-link{
+    font-size: 16px;
+    line-height: 2;
+    display: block;
+}
