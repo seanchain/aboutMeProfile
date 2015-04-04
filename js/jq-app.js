@@ -117,9 +117,4 @@ $().ready(function () {
         $("#locate-img").attr("src", des);
     });
 
-    $("#link-add").on("click", function(){
-        alert("Hello, world");
-    });
-
-
 });
