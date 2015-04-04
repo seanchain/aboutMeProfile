@@ -6914,6 +6914,10 @@ html[data-useragent*='MSIE 10.0'] #responsive-gallery-large-marquee .imageoverla
     margin-left: 0;
 }
 
+#main-content h2{
+    font-size: 40px;
+}
+
 .pricing .price {
   text-transform: uppercase;
   font-size: 0.75em;
