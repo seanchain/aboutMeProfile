@@ -7673,7 +7673,7 @@ header {
 }
 
 #main-content3{
-    padding: 0 0 20px 0;
+    padding: 0 0 0 0;
 }
 
 #main-content {
@@ -9277,7 +9277,7 @@ p.lead {
 
 .colored-cardview{
     background-color:RGBA(35, 45, 54, 1);
-    padding: 50px 50px 50px 50px;
+    padding: 50px 50px 50px;
     color: white;
 }
 
@@ -9291,4 +9291,14 @@ p.lead {
 
 .input-prev{
     color:dodgerblue;
+}
+
+
+#link-add{
+    margin-left: 10px;
+}
+
+#link-header{
+    margin-left:25px;
+    padding-bottom: 20px;
 }
