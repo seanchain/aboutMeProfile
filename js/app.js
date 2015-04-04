@@ -4,6 +4,10 @@ function MainCtrl($scope){
     $scope.count = 0;
 }
 
+function lnkCtrl($scope){
+    $scope.count = 0;
+}
+
 app.directive('workhistory', function($compile){
     return function(scope, element, attrs) {
         element.bind("click", function(){
@@ -24,15 +28,15 @@ app.directive('userlinks', function($compile){
         element.bind("click", function(){
             scope.count ++;
             angular.element(document.getElementById('othersites')).append(
-                $compile('<div class="small-6 columns link-panel left">' +
+                $compile('<div class="small-6 columns link-panel left" id="lnk-cell-id-' + scope.count + '">' +
                         '<span class="link-cell">' +
-                        '<img src="./images/github.png" alt="other links icon" class="link-cell-icon"/>' +
+                        '<img id="link-cell-icon-' + scope.count + '" src="./images/link.png" alt="other links icon" class="link-cell-icon"/>' +
                         '<span class="link-cell-title">' +
-                        '<span class="link-cell-content" contenteditable="true" placeholder="Enter your content"></span>' +
-                        '<span class="link-cell-link" contenteditable="true" placeholder="Enter your link"></span>' +
+                        '<span id="link-cell-content-' + scope.count + '" class="link-cell-content" contenteditable="true" placeholder="Enter Your Description"></span>' +
+                        '<span id="link-cell-link-' + scope.count + '" class="link-cell-link" contenteditable="true" placeholder="Enter Your Link"></span>' +
                         '</span>' +
                         '</span>' +
-                        '<br /><br/><button class="button alert tiny">DELETE</button>')(scope)
+                        '<button class="button alert tiny lnk-del-btn" style="visibility: hidden" id="lnk-del-btn-' + scope.count + '">DELETE</button>')(scope)
             );
         });
     }

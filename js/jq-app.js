@@ -97,6 +97,50 @@ $().ready(function () {
         $(this).css("background-color", "white");
     });
 
+    $('div').on('focus', ".link-cell-content", function () {
+        var idname = $(this).attr("id");
+        idname = idname.split('-')[3];
+        var visibleid = "#lnk-del-btn-" + idname;
+        console.log(visibleid);
+        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
+        $(visibleid).attr('style', 'visibility:"visible"');
+    });
+
+    $('div').on('focus', ".link-cell-link", function () {
+        var idname = $(this).attr("id");
+        idname = idname.split('-')[3];
+        var visibleid = "#lnk-del-btn-" + idname;
+        console.log(visibleid);
+        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
+        $(visibleid).attr('style', 'visibility:"visible"');
+    });
+
+    $('div').on('blur', ".link-cell-content", function () {
+        $('.lnk-del-btn').attr('style','visibility:hidden');
+        var $element = $(this);
+        if ($element.text() == "") {
+            $element.empty();
+        }
+        $(this).css("background-color", "RGBA(57, 66, 74, 1)");
+    });
+
+    $('div').on('blur', ".link-cell-link", function () {
+        $('.lnk-del-btn').attr('style','visibility:hidden');
+        var $element = $(this);
+        if ($element.text() == "") {
+            $element.empty();
+        }
+        $(this).css("background-color", "RGBA(57, 66, 74, 1)");
+    });
+
+    $('div').on('click', '.lnk-del-btn', function (){
+        var idname = $(this).attr("id");
+        idname = idname.split('-')[3];
+        var del_sec = "#lnk-cell-id-" + idname;
+        console.log(del_sec);
+        $(del_sec).remove();
+    });
+
     $('div').on('click', '.del-btn', function (){
         var idname = $(this).attr("id");
         idname = idname.split('-')[2];

@@ -9304,7 +9304,8 @@ p.lead {
 }
 
 .link-panel{
-    padding: 20px 20px 20px 0;
+    padding: 20px 20px 0 0;
+    margin-bottom: 0;
 }
 
 .link-cell{
@@ -9340,7 +9341,7 @@ p.lead {
 }
 
 .link-cell-content{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.9;
     padding-top: 1px;
     display: block;
@@ -9348,7 +9349,11 @@ p.lead {
 }
 
 .link-cell-link{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.9;
     display: block;
+}
+
+.lnk-del-btn{
+    margin-top: 20px;
 }
