@@ -34,40 +34,59 @@ $().ready(function () {
         count = parseInt(count) + 1;
         if(count % 5 == 0){
             $("#main-content").attr("style", "background-color:RGBA(70, 36, 36, 1);");
+            $("#main-content1").attr("style", "background-color:RGBA(70, 36, 36, 1);");
+            $("#main-content2").attr("style", "background-color:RGBA(70, 36, 36, 1);");
+            $("#main-content3").attr("style", "background-color:RGBA(70, 36, 36, 1);");
             $("#qi").attr("style", "background-color:RGBA(29, 14, 14, 1);");
             $("#ci").attr("style", "background-color:RGBA(29, 14, 14, 1);");
             $("#excessive-content").attr("style", "background-color:RGBA(59, 30, 30, 1)");
+            $("#lnk-content").attr("style", "background-color:RGBA(59, 30, 30, 1)");
         }
         else if (count % 5 == 1){
             $("#main-content").attr("style", "background-color:RGBA(78, 78, 57, 1);");
+            $("#main-content1").attr("style", "background-color:RGBA(78, 78, 57, 1);");
+            $("#main-content2").attr("style", "background-color:RGBA(78, 78, 57, 1);");
+            $("#main-content3").attr("style", "background-color:RGBA(78, 78, 57, 1);");
             $("#qi").attr("style", "background-color:RGBA(32, 32, 23, 1);");
             $("#ci").attr("style", "background-color:RGBA(32, 32, 23, 1);");
             $("#excessive-content").attr("style", "background-color:RGBA(66, 66, 48, 1)");
+            $("#lnk-content").attr("style", "background-color:RGBA(66, 66, 48, 1)");
         }
         else if (count % 5 == 2){
             $("#main-content").attr("style", "background-color:RGBA(58, 42, 80, 1)");
+            $("#main-content1").attr("style", "background-color:RGBA(58, 42, 80, 1)");
+            $("#main-content2").attr("style", "background-color:RGBA(58, 42, 80, 1)");
+            $("#main-content3").attr("style", "background-color:RGBA(58, 42, 80, 1)");
             $("#qi").attr("style", "background-color:RGBA(24, 17, 33, 1);");
             $("#ci").attr("style", "background-color:RGBA(24, 17, 33, 1);");
             $("#excessive-content").attr("style", "background-color:RGBA(49, 35, 68, 1);");
+            $("#lnk-content").attr("style", "background-color:RGBA(49, 35, 68, 1);");
         }
         else if (count % 5 == 3){
             $("#main-content").attr("style", "background-color:RGBA(88, 69, 85, 1);");
+            $("#main-content1").attr("style", "background-color:RGBA(88, 69, 85, 1);");
+            $("#main-content2").attr("style", "background-color:RGBA(88, 69, 85, 1);");
+            $("#main-content3").attr("style", "background-color:RGBA(88, 69, 85, 1);");
             $("#qi").attr("style", "background-color:RGBA(36, 28, 35, 1);");
             $("#ci").attr("style", "background-color:RGBA(36, 28, 35, 1);");
             $("#excessive-content").attr("style", "background-color:RGBA(74, 58, 72, 1)");
+            $("#lnk-content").attr("style", "background-color:RGBA(74, 58, 72, 1)");
         }
         else if (count % 5 == 4){
             $("#main-content").attr("style", "background-color:RGBA(55, 85, 73, 1);");
+            $("#main-content1").attr("style", "background-color:RGBA(55, 85, 73, 1);");
+            $("#main-content2").attr("style", "background-color:RGBA(55, 85, 73, 1);");
+            $("#main-content3").attr("style", "background-color:RGBA(55, 85, 73, 1);");
             $("#qi").attr("style", "background-color:RGBA(22, 35, 30, 1);");
             $("#ci").attr("style", "background-color:RGBA(22, 35, 30, 1);");
             $("#excessive-content").attr("style", "background-color:RGBA(46, 72, 62, 1);");
+            $("#lnk-content").attr("style", "background-color:RGBA(46, 72, 62, 1);");
         }
         count = count.toString();
         $("#count").attr("value", count);
     });
 
     $(".cur-per").focus(function(){
-       $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
     });
 
 
@@ -76,7 +95,6 @@ $().ready(function () {
         if ($element.text() == "") {
             $element.empty();
         }
-        $(this).css("background-color", "white");
     });
 
     $('div').on('focus', ".prev-per", function () {
@@ -84,7 +102,6 @@ $().ready(function () {
         idname = idname.split('-')[2];
         var visibleid = "#prev-btn-" + idname;
         console.log(visibleid);
-        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
         $(visibleid).attr('style', 'visibility:"visible"');
     });
 
@@ -94,7 +111,6 @@ $().ready(function () {
         if ($element.text() == "") {
             $element.empty();
         }
-        $(this).css("background-color", "white");
     });
 
     $('div').on('focus', ".link-cell-content", function () {
@@ -102,7 +118,6 @@ $().ready(function () {
         idname = idname.split('-')[3];
         var visibleid = "#lnk-del-btn-" + idname;
         console.log(visibleid);
-        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
         $(visibleid).attr('style', 'visibility:"visible"');
     });
 
@@ -111,7 +126,6 @@ $().ready(function () {
         idname = idname.split('-')[3];
         var visibleid = "#lnk-del-btn-" + idname;
         console.log(visibleid);
-        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
         $(visibleid).attr('style', 'visibility:"visible"');
     });
 
@@ -121,7 +135,6 @@ $().ready(function () {
         if ($element.text() == "") {
             $element.empty();
         }
-        $(this).css("background-color", "RGBA(57, 66, 74, 1)");
     });
 
     $('div').on('blur', ".link-cell-link", function () {
@@ -130,7 +143,6 @@ $().ready(function () {
         if ($element.text() == "") {
             $element.empty();
         }
-        $(this).css("background-color", "RGBA(57, 66, 74, 1)");
     });
 
     $('div').on('click', '.lnk-del-btn', function (){
