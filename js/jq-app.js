@@ -87,6 +87,7 @@ $().ready(function () {
     });
 
     $(".cur-per").focus(function(){
+       $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
     });
 
 
@@ -95,6 +96,7 @@ $().ready(function () {
         if ($element.text() == "") {
             $element.empty();
         }
+        $(this).css("background-color", "white");
     });
 
     $('div').on('focus', ".prev-per", function () {
@@ -102,6 +104,7 @@ $().ready(function () {
         idname = idname.split('-')[2];
         var visibleid = "#prev-btn-" + idname;
         console.log(visibleid);
+        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
         $(visibleid).attr('style', 'visibility:"visible"');
     });
 
@@ -111,6 +114,7 @@ $().ready(function () {
         if ($element.text() == "") {
             $element.empty();
         }
+        $(this).css("background-color", "white");
     });
 
     $('div').on('focus', ".link-cell-content", function () {
