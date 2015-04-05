@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f39c13c5-dd51-4c51-8026-c3e81209eca8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/github.png" afterPath="$PROJECT_DIR$/images/github.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/link.png" afterPath="$PROJECT_DIR$/images/link.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/location.png" afterPath="$PROJECT_DIR$/images/location.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mail.png" afterPath="$PROJECT_DIR$/images/mail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/qq.png" afterPath="$PROJECT_DIR$/images/qq.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/school.png" afterPath="$PROJECT_DIR$/images/school.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/work.png" afterPath="$PROJECT_DIR$/images/work.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/marketing.css" afterPath="$PROJECT_DIR$/css/marketing.css" />
     </list>
     <ignored path="aboutMeProfile.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28896672" vertical-offset="765" max-vertical-offset="2445">
+            <state vertical-scroll-proportion="-6.875" vertical-offset="765" max-vertical-offset="2445">
               <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="marketing.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="marketing.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/marketing.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.888889" vertical-offset="139017" max-vertical-offset="140580">
-              <caret line="9282" column="0" selection-start-line="9282" selection-start-column="0" selection-end-line="9282" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.94957983" vertical-offset="138035" max-vertical-offset="140580">
+              <caret line="9240" column="38" selection-start-line="9240" selection-start-column="38" selection-end-line="9240" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -73,7 +80,7 @@
       <file leaf-file-name="jq-app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jq-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.259259" vertical-offset="1475" max-vertical-offset="2790">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1475" max-vertical-offset="2790">
               <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding />
             </state>
@@ -93,9 +100,9 @@
         <option value="$PROJECT_DIR$/Foundation/marketing.css" />
         <option value="$PROJECT_DIR$/css/css.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/css/marketing.css" />
         <option value="$PROJECT_DIR$/js/jq-app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/marketing.css" />
       </list>
     </option>
   </component>
@@ -174,14 +181,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hacking_into_iTunes" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -189,6 +192,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -242,13 +249,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -272,6 +279,52 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2445">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#div#1;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#1;n#div#1;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="765">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <marker date="1428130853000" expanded="true" signature="1172:1190" placeholder="..." />
+            <marker date="1428130853000" expanded="true" signature="2346:2364" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/marketing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="139017" max-vertical-offset="140580">
+          <caret line="9282" column="0" selection-start-line="9282" selection-start-column="0" selection-end-line="9282" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jq-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1475" max-vertical-offset="2790">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="2445">
@@ -573,21 +626,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6993569" vertical-offset="0" max-vertical-offset="630">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/marketing.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.888889" vertical-offset="139017" max-vertical-offset="140580">
-          <caret line="9282" column="0" selection-start-line="9282" selection-start-column="0" selection-end-line="9282" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jq-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.259259" vertical-offset="1475" max-vertical-offset="2790">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1475" max-vertical-offset="2790">
           <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
@@ -606,7 +650,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28896672" vertical-offset="765" max-vertical-offset="2445">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="765" max-vertical-offset="2445">
           <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -620,6 +664,14 @@
             <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/marketing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94957983" vertical-offset="138035" max-vertical-offset="140580">
+          <caret line="9240" column="38" selection-start-line="9240" selection-start-column="38" selection-end-line="9240" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

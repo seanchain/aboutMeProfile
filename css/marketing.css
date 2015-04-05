@@ -9216,7 +9216,7 @@ p.lead {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     padding: 20px;
-    background-color: RGBA(107, 154, 172, 0.85);
+    background-color: RGBA(0, 0, 0, 0.6);
 }
 
 .namepanel h2{
