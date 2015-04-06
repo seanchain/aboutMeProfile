@@ -46,14 +46,23 @@
 <nav class="top-bar hide-for-small" data-topbar="">
 <ul class="title-area">
 <li class="name">
-<h1><a href="http://foundation.zurb.com/index.html">Personal Profile</span></a></h1>
+<h1><a href="http://foundation.zurb.com/index.html">Personal Profile</a></h1>
 </li>
 </ul>
 
 <section class="top-bar-section">
-<ul><li class="has-form">
-<a href="#" class="small button">EDIT</a>
-</li>
+<ul>
+    <li class="has-form">
+        <a href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</a>
+        <div id="editdrop" data-dropdown-content class="f-dropdown large" aria-hidden="true" tabindex="-1">
+            <h1>Edit Your Profile</h1>
+            <input type="text" placeholder="Your name Here"/>
+            <input type="text" placeholder="Your Description Here"/>
+            <input type="text" placeholder="Your Location Here"/>
+            <input type="text" placeholder="Your Education Status Here"/>
+            <input type="text" placeholder="Your Personal Tag Here"/>
+        </div>
+    </li>
 </ul>
 </section>
 </nav>
@@ -116,7 +125,6 @@
         </div>
         <div id="prev-work" class="small-11 small-centered columns cardview">
             <button workhistory class="button success tiny">ADD WORK HISTORY</button>
-
         </div>
     </div>
 </section>
