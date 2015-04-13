@@ -2,7 +2,10 @@
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <!--[if IE 10]><html class="ie10" lang="en" > <![endif]-->
-<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" data-useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:36.0) Gecko/20100101 Firefox/36.0" lang="en"><head>
+<html style=""
+      class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+      data-useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:36.0) Gecko/20100101 Firefox/36.0" lang="en"
+      xmlns="http://www.w3.org/1999/html"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,94 +31,104 @@
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=257781267581967";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-<div class="off-canvas-wrap" data-offcanvas="">
-<div class="inner-wrap">
-<aside class="left-off-canvas-menu">
-<ul class="off-canvas-list">
-<li><label>Personal Profile</label></li>
-<li class="gs" id="gs"><p><a href="#" class="button">EDIT</a></p></li>
-</ul>
-<hr>
-</aside>
-<nav class="tab-bar show-for-small">
-<a class="left-off-canvas-toggle menu-icon ">
-<span>Profile</span>
-</a>
-</nav>
-<nav class="top-bar hide-for-small" data-topbar="">
-<ul class="title-area">
-<li class="name">
-<h1><a href="http://foundation.zurb.com/index.html">Personal Profile</a></h1>
-</li>
-</ul>
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
-<section class="top-bar-section">
-<ul>
-    <li class="has-form">
-        <a href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</a>
-        <div id="editdrop" data-dropdown-content class="f-dropdown large" aria-hidden="true" tabindex="-1">
-            <h1>Edit Your Profile</h1>
-            <input type="text" placeholder="Your name Here"/>
-            <input type="text" placeholder="Your Description Here"/>
-            <input type="text" placeholder="Your Location Here"/>
-            <input type="text" placeholder="Your Education Status Here"/>
-            <input type="text" placeholder="Your Personal Tag Here"/>
-        </div>
-    </li>
-</ul>
-</section>
-</nav>
-<section id="homepage-hero">
-<div class="row">
-<div class="medium-5 large-5 columns namepanel sel">
-    <div>
-        <h2>Hélodie Jaqueline</h2><br />
-        <h3>No <cite>FOUNDATION</cite>, but I still have to live my life...</h3><br />
-        <h4><img src="images/location.png" class="small-icon">Chengdu</h4>
-        <h4><img src="images/school.png" class="small-icon">Sichuan University</h4>
-        <h4><img src="images/work.png" class="small-icon" alt=""/>Web Developer</h4><br />
+<div class="off-canvas-wrap" data-offcanvas="">
+    <div class="inner-wrap">
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Personal Profile</label></li>
+                <li class="gs" id="gs"><p><a href="#" class="button">EDIT</a></p></li>
+            </ul>
+            <hr>
+        </aside>
     </div>
-    <a href="http://user.qzone.qq.com/1833575042"><img src="./images/qq.png" width="40px" alt=""/></a>
-    <a href="http://weibo.com/u/1966283157"><img src="./images/weibo.png" width="40px" alt=""/></a>
-    <a href="https://github.com/seanchain"><img src="./images/github.png" width="40px" alt=""/></a>
-    <a href="mailto:chensh1996@163.com"><img src="./images/mail.png" width="40px" alt=""/></a>
 </div>
-</div>
+
+<nav class="tab-bar show-for-small">
+    <a class="left-off-canvas-toggle menu-icon ">
+        <span>Profile</span>
+    </a>
+</nav>
+
+<nav class="top-bar hide-for-small" data-topbar="">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="http://foundation.zurb.com/index.html">Personal Profile</a></h1>
+        </li>
+    </ul>
+    <section class="top-bar-section">
+        <ul>
+            <li class="has-form">
+                <a href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</a>
+                <div id="editdrop" data-dropdown-content class="f-dropdown large" aria-hidden="true" tabindex="-1">
+                    <h1>Edit Your Profile</h1>
+                    <input type="text" placeholder="Your name Here"/>
+                    <input type="text" placeholder="Your Description Here"/>
+                    <input type="text" placeholder="Your Location Here"/>
+                    <input type="text" placeholder="Your Education Status Here"/>
+                    <input type="text" placeholder="Your Personal Tag Here"/>
+                </div>
+            </li>
+        </ul>
+    </section>
+</nav>
+
+<section id="homepage-hero">
+    <div class="row">
+        <div class="medium-5 large-5 columns namepanel sel">
+            <div>
+                <h2>Hélodie Jaqueline</h2><br />
+                <h3>No <cite>FOUNDATION</cite>, but I still have to live my life...</h3><br />
+                <h4><img src="images/location.png" class="small-icon">Chengdu</h4>
+                <h4><img src="images/school.png" class="small-icon">Sichuan University</h4>
+                <h4><img src="images/work.png" class="small-icon" alt=""/>Web Developer</h4><br />
+            </div>
+            <a href="http://user.qzone.qq.com/1833575042"><img src="./images/qq.png" width="40px" alt=""/></a>
+            <a href="http://weibo.com/u/1966283157"><img src="./images/weibo.png" width="40px" alt=""/></a>
+            <a href="https://github.com/seanchain"><img src="./images/github.png" width="40px" alt=""/></a>
+            <a href="mailto:chensh1996@163.com"><img src="./images/mail.png" width="40px" alt=""/></a>
+        </div>
+    </div>
     <br/><br/>
 </section>
-    <section id="excessive-content" style="background-color: RGBA(34, 45, 54, 1);">
-        <div class="row">
-            <div class="small-1 columns"></div>
-            <div class="small-11 columns">
-                <span data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000" id="qc">
-                    <img id="qi" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
-                         src="./images/exchange.png" width="30px" alt=""/></span>
-                <div id="hover1" class="f-dropdown" data-dropdown-content>
-                    <h5>Quote Exchange</h5>
-                </div>
-                &nbsp;&nbsp;
-                <span data-dropdown="hover2" data-options="is_hover:true; hover_timeout:5000" id="cc">
-                    <img id="ci" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
-                         src="./images/color.png" width="30px" alt=""/></span>
-                <div id="hover2" class="f-dropdown" data-dropdown-content>
-                    <h5>Scheme Exchange</h5>
-                </div>
-                <input type="hidden" value="0" id="count"/>
-                <input type="hidden" value="0" id="quotecount"/>
+
+<section id="excessive-content" style="background-color: RGBA(34, 45, 54, 1);">
+    <div class="row">
+        <div class="small-1 columns"></div>
+        <div class="small-11 columns">
+            <span data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000" id="qc">
+                <img id="qi" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
+                         src="./images/exchange.png" width="30px" alt=""/>
+            </span>
+            <div id="hover1" class="f-dropdown" data-dropdown-content>
+                <h5>Quote Exchange</h5>
             </div>
+            &nbsp;&nbsp;
+            <span data-dropdown="hover2" data-options="is_hover:true; hover_timeout:5000" id="cc">
+                <img id="ci" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
+                         src="./images/color.png" width="30px" alt=""/>
+            </span>
+            <div id="hover2" class="f-dropdown" data-dropdown-content>
+                <h5>Scheme Exchange</h5>
+            </div>
+            <input type="hidden" value="0" id="count"/>
+            <input type="hidden" value="0" id="quotecount"/>
         </div>
-    </section>
+    </div>
+</section>
+
 <section id="main-content" style="background-color: RGBA(40, 53, 63, 1);">
     <br/>
-    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-content">“苟利国家生死以，岂因祸福避趋之”</h2>
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-content">“Talk is cheap, show me the code”</h2>
     <br />
-    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-author">– 林则徐</h2>
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-author">– Linus Torvalds</h2>
     <br/>
 </section>
  
 <section id="main-content1" style="background-color: RGBA(40, 53, 63, 1);">
-    <div class="rows"  ng-controller="MainCtrl">
+    <div class="row"  ng-controller="MainCtrl">
         <div class="small-11 small-centered columns cardview" id="workprofile">
             <div id="cardheader">CURRENT ROLE</div>
             <div placeholder="What's your latest role?"  contenteditable="true" class="job cur-per"></div>
@@ -128,8 +141,9 @@
         </div>
     </div>
 </section>
-<section id="main-content2" style="background-color: RGBA(40, 53, 63, 1);>
-    <div class="rows">
+
+<section id="main-content2" style="background-color: RGBA(40, 53, 63, 1);">
+    <div class="row">
         <div class="small-11 small-centered columns cardview" id="locate">
             <h3 class="input-prev">Here's where I'm living</h3>
             <h2 contenteditable="true" class="sel" placeholder="Type where you are..." id="locate-input"></h2>
@@ -139,7 +153,7 @@
 </section>
  
 <section id="main-content3" style="background-color: RGBA(40, 53, 63, 1);">
-<div class="rows">
+<div class="row">
     <div class="small-11 small-centered columns colored-cardview" id="lnk-content" style="background-color:RGBA(34, 45, 54, 1);" ng-controller="lnkCtrl">
         <span id="link-header">OTHER LINKS</span><a id="link-add" userlinks>
         <img src="./images/add.png" alt="add button" width="22px"/></a><br/>
@@ -153,9 +167,6 @@
     <h5>CopyRight © 2015 沉思·航 All Rights Reserved</h5>
     <h5>备案号：蜀ICP备15000988号 <a href="#">联系我们</a></h5>
 </footer>
-    </div>
-</div>
-
 <script src="js/jquery.min.js"></script>
 <script src="js/templates.js"></script>
 <script src="js/marketing.js"></script>

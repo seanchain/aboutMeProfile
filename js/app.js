@@ -17,7 +17,8 @@ app.directive('workhistory', function($compile){
                 '</div><div contenteditable="true" id="prev-place-' + scope.count + '" placeholder="Which company?" class="comp prev-per"></div>' +
                 '<div contenteditable="true" id="prev-years-' + scope.count + '" placeholder="How long have you been in this role?" class="years prev-per"></div>' +
                 '<div contenteditable="true" id="prev-achi-' + scope.count + '" placeholder="Your position or achievements" class="achie prev-per"></div>' +
-                '<button class="button tiny alert del-btn" id="prev-btn-' + scope.count + '" style="visibility: hidden">DELETE</button></div>')(scope)
+                '<div class="button tiny alert del-btn" id="prev-btn-' + scope.count + '" style="visibility: hidden">DELETE</div>&nbsp;&nbsp;' +
+                '<div class="button tiny success confirm-btn" id="conf-btn-' + scope.count + '" style="visibility:hidden" >CONFIRM</div>')(scope)
             );
         });
     }
@@ -36,7 +37,8 @@ app.directive('userlinks', function($compile){
                         '<span id="link-cell-link-' + scope.count + '" class="link-cell-link" contenteditable="true" placeholder="Enter Your Link"></span>' +
                         '</span>' +
                         '</span>' +
-                        '<button class="button alert tiny lnk-del-btn" style="visibility: hidden" id="lnk-del-btn-' + scope.count + '">DELETE</button>')(scope)
+                        '<div class="button alert tiny lnk-del-btn" style="visibility: hidden" id="lnk-del-btn-' + scope.count + '">DELETE</div>&nbsp;&nbsp;' +
+                '<div class="button success  tiny lnk-confirm-btn" style="visibility: hidden" id="lnk-confirm-btn-' + scope.count + '">CONFIRM</div>')(scope)
             );
         });
     }

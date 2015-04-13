@@ -103,17 +103,14 @@ $().ready(function () {
         var idname = $(this).attr("id");
         idname = idname.split('-')[2];
         var visibleid = "#prev-btn-" + idname;
+        var visibleid1 = "#conf-btn-" + idname;
         console.log(visibleid);
         $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
-        $(visibleid).attr('style', 'visibility:"visible"');
+        $(visibleid).attr('style', 'visibility:visible');
+        $(visibleid1).attr('style', 'visibility:visible');
     });
 
     $('div').on('blur', ".prev-per", function () {
-        $('.del-btn').attr('style','visibility:hidden');
-        var $element = $(this);
-        if ($element.text() == "") {
-            $element.empty();
-        }
         $(this).css("background-color", "white");
     });
 
@@ -121,33 +118,37 @@ $().ready(function () {
         var idname = $(this).attr("id");
         idname = idname.split('-')[3];
         var visibleid = "#lnk-del-btn-" + idname;
+        var visibleid1 = "#lnk-confirm-btn-" + idname;
         console.log(visibleid);
-        $(visibleid).attr('style', 'visibility:"visible"');
+        $(visibleid).attr('style', 'visibility:visible');
+        $(visibleid1).attr('style', 'visibility:visible');
     });
 
     $('div').on('focus', ".link-cell-link", function () {
         var idname = $(this).attr("id");
         idname = idname.split('-')[3];
         var visibleid = "#lnk-del-btn-" + idname;
+        var visibleid1 = "#lnk-confirm-btn-" + idname;
         console.log(visibleid);
-        $(visibleid).attr('style', 'visibility:"visible"');
+        $(visibleid).attr('style', 'visibility:visible');
+        $(visibleid1).attr('style', 'visibility:visible');
     });
 
-    $('div').on('blur', ".link-cell-content", function () {
-        $('.lnk-del-btn').attr('style','visibility:hidden');
-        var $element = $(this);
-        if ($element.text() == "") {
-            $element.empty();
-        }
-    });
+    //$('div').on('blur', ".link-cell-content", function () {
+    //    $('.lnk-del-btn').attr('style','visibility:hidden');
+    //    var $element = $(this);
+    //    if ($element.text() == "") {
+    //        $element.empty();
+    //    }
+    //});
 
-    $('div').on('blur', ".link-cell-link", function () {
-        $('.lnk-del-btn').attr('style','visibility:hidden');
-        var $element = $(this);
-        if ($element.text() == "") {
-            $element.empty();
-        }
-    });
+    //$('div').on('blur', ".link-cell-link", function () {
+    //    $('.lnk-del-btn').attr('style','visibility:hidden');
+    //    var $element = $(this);
+    //    if ($element.text() == "") {
+    //        $element.empty();
+    //    }
+    //});
 
     $('div').on('click', '.lnk-del-btn', function (){
         var idname = $(this).attr("id");
@@ -157,11 +158,32 @@ $().ready(function () {
         $(del_sec).remove();
     });
 
+
     $('div').on('click', '.del-btn', function (){
         var idname = $(this).attr("id");
         idname = idname.split('-')[2];
         var del_sec = "#prev-section-" + idname;
         $(del_sec).remove();
+    });
+
+    $('div').on('click', '.lnk-confirm-btn', function (){
+        var idname = $(this).attr("id");
+        idname = idname.split('-')[3];
+        console.log(idname);
+        var confbtn = "#lnk-confirm-btn-" + idname;
+        var delbtn = "#lnk-del-btn-" + idname;
+        $(confbtn).attr("style", "visibility:hidden");
+        $(delbtn).attr("style", "visibility:hidden");
+    });
+
+
+    $('div').on('click', '.confirm-btn', function (){
+        var idname = $(this).attr("id");
+        idname = idname.split('-')[2];
+        var confbtn = "#conf-btn-" + idname;
+        var delbtn = "#prev-btn-" + idname;
+        $(confbtn).attr("style", "visibility:hidden");
+        $(delbtn).attr("style", "visibility:hidden");
     });
 
     $("#locate-input").on("keydown",function(e){
