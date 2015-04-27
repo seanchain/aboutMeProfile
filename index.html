@@ -18,7 +18,7 @@
 </head>
 
     <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"></head>
-<body ng-app="app">
+<body ng-app="app" ng-controller="MyCtrl">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -53,7 +53,7 @@
             <h1><a href="http://foundation.zurb.com/index.html">Personal Profile</a></h1>
         </li>
     </ul>
-    <section class="top-bar-section" ng-controller="MyCtrl">
+    <section class="top-bar-section">
         <ul>
             <li class="has-form">
                 <span href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</span>
@@ -61,16 +61,16 @@
                 <img src="images/loader.gif" ng-show="loader.loading" class="loading"/>
             <div id="editdrop" data-dropdown-content class="f-dropdown medium" aria-hidden="true" tabindex="-1">
                     <h1 class="bold">Edit Your Profile</h1>
-                    <input type="text" placeholder="Your name Here"/>
-                    <input type="text" placeholder="Your Location Here"/>
-                    <input type="text" placeholder="Your Education Status Here"/>
-                    <input type="text" placeholder="Your Personal Tag Here"/>
-                    <input type="text" placeholder="Your QQ Here"/>
-                    <input type="text" placeholder="Your Sina Weibo Here"/>
-                    <input type="text" placeholder="Your GitHub account Here"/>
-                    <input type="text" placeholder="Your email address Here"/>
+                    <input type="text" placeholder="Your name Here" ng-model="name" value="Sean Chain" ng-initial/>
+                    <input type="text" placeholder="Your Location Here" ng-model="loca"/>
+                    <input type="text" placeholder="Your Education Status Here" ng-model="edu"/>
+                    <input type="text" placeholder="Your Personal Tag Here" ng-model="personaltag"/>
+                    <input type="text" placeholder="Your QQ Here" ng-model="qq"/>
+                    <input type="text" placeholder="Your Sina Weibo Here" ng-model="weibo"/>
+                    <input type="text" placeholder="Your GitHub account Here" ng-model="github"/>
+                    <input type="text" placeholder="Your email address Here" ng-model="email"/>
                     <input type="hidden" value="chen.jpg" id="nametag"/>
-                    <textarea name="description" id="description" placeholder="Your personal descriptions here."></textarea>
+                    <textarea name="description" id="description" placeholder="Your personal descriptions here." ng-model="desc"></textarea>
                     <br /><br />
                 </div>
             </li>
@@ -82,16 +82,16 @@
     <div class="row">
         <div class="medium-5 large-5 columns namepanel sel">
             <div>
-                <h2></h2><br />
-                <h3></h3><br />
-                <h4><img src="images/location.png" class="small-icon"></h4>
-                <h4><img src="images/school.png" class="small-icon"></h4>
-                <h4><img src="images/work.png" class="small-icon" alt=""/></h4><br />
+                <h2>{{name}}</h2><br />
+                <h3>{{desc}}</h3><br />
+                <h4><img src="images/location.png" class="small-icon">{{loca}}</h4>
+                <h4><img src="images/school.png" class="small-icon">{{edu}}</h4>
+                <h4><img src="images/work.png" class="small-icon" alt=""/>{{personaltag}}</h4><br />
             </div>
-            <span><a href="http://user.qzone.qq.com/1833575042"><img src="./images/qq.png" width="40px" alt=""/></a></span>
+            <span><a href="http://user.qzone.qq.com/{{qq}}"><img src="./images/qq.png" width="40px" alt=""/></a></span>
             <span><a href="http://weibo.com/u/1966283157"><img src="./images/weibo.png" width="40px" alt=""/></a></span>
-            <span><a href="https://github.com/seanchain"><img src="./images/github.png" width="40px" alt=""/></a></span>
-            <span><a href="mailto:chensh1996@163.com"><img src="./images/mail.png" width="40px" alt=""/></a></span>
+            <span><a href="https://github.com/{{github}}"><img src="./images/github.png" width="40px" alt=""/></a></span>
+            <span><a href="mailto:{{email}}"><img src="./images/mail.png" width="40px" alt=""/></a></span>
         </div>
     </div>
     <br/><br/>
