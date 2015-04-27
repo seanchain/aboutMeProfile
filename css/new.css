@@ -30,6 +30,17 @@
     width: 200px;
 }
 
+.loading{
+    height: 35px;
+    padding-top: 15px;
+}
+
+.loading-text{
+    margin-left: 20px;
+    padding-top: 10px;
+    color: cornsilk;
+}
+
 .has-form span{
     margin-right: 20px;
 }

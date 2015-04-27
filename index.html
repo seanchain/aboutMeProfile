@@ -58,7 +58,7 @@
             <li class="has-form">
                 <span href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</span>
                 <span class="button small" id="changepic" ngf-select ngf-change="upload($files)">SWITCH BACKGROUND</span>
-                <span ng-show="loader.loading" style="color:white;">New Background Loading...</span>
+                <img src="images/loader.gif" ng-show="loader.loading" class="loading"/>
             <div id="editdrop" data-dropdown-content class="f-dropdown medium" aria-hidden="true" tabindex="-1">
                     <h1 class="bold">Edit Your Profile</h1>
                     <input type="text" placeholder="Your name Here"/>
