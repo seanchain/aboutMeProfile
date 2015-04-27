@@ -1,7 +1,8 @@
-
 <!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<!--[if IE 10]><html class="ie10" lang="en" > <![endif]-->
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if IE 10]>
+<html class="ie10" lang="en"> <![endif]-->
 <html style=""
       class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
       data-useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:36.0) Gecko/20100101 Firefox/36.0" lang="en"
@@ -13,20 +14,32 @@
     <title>Personal Profile Generator</title>
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link rel="icon" href="http://foundation.zurb.com/assets/img/icons/favicon.ico" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="css/marketing.css" />
-    <link rel="stylesheet" href="css/new.css" />
+    <link type="text/css" rel="stylesheet" href="css/marketing.css"/>
 </head>
 
-    <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"></head>
+<meta class="foundation-data-attribute-namespace">
+<meta class="foundation-mq-xxlarge">
+<meta class="foundation-mq-xlarge-only">
+<meta class="foundation-mq-xlarge">
+<meta class="foundation-mq-large-only">
+<meta class="foundation-mq-large">
+<meta class="foundation-mq-medium-only">
+<meta class="foundation-mq-medium">
+<meta class="foundation-mq-small-only">
+<meta class="foundation-mq-small">
+<style></style>
+<meta class="foundation-mq-topbar">
+</head>
 <body ng-app="app" ng-controller="MyCtrl">
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=257781267581967";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=257781267581967";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 </script>
 
 <div class="off-canvas-wrap" data-offcanvas="">
@@ -56,11 +69,15 @@
     <section class="top-bar-section">
         <ul>
             <li class="has-form">
-                <span href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</span>
-                <span class="button small" id="changepic" ngf-select ngf-change="upload($files)">SWITCH BACKGROUND</span>
+                <span href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop"
+                      aria-expanded="false">EDIT</span>
+                <span class="button small" id="changepic" ngf-select
+                      ngf-change="upload($files)">SWITCH BACKGROUND</span>
                 <img src="images/loader.gif" ng-show="loader.loading" class="loading"/>
-            <div id="editdrop" data-dropdown-content class="f-dropdown medium" aria-hidden="true" tabindex="-1">
+
+                <div id="editdrop" data-dropdown-content class="f-dropdown medium" aria-hidden="true" tabindex="-1">
                     <h1 class="bold">Edit Your Profile</h1>
+                    <!--Will get all the user-information data from the database using PHP-->
                     <input type="text" placeholder="Your name Here" ng-model="name" value="Sean Chain" ng-initial/>
                     <input type="text" placeholder="Your Location Here" ng-model="loca"/>
                     <input type="text" placeholder="Your Education Status Here" ng-model="edu"/>
@@ -70,8 +87,9 @@
                     <input type="text" placeholder="Your GitHub account Here" ng-model="github"/>
                     <input type="text" placeholder="Your email address Here" ng-model="email"/>
                     <input type="hidden" value="chen.jpg" id="nametag"/>
-                    <textarea name="description" id="description" placeholder="Your personal descriptions here." ng-model="desc"></textarea>
-                    <br /><br />
+                    <textarea name="description" id="description" placeholder="Your personal descriptions here."
+                              ng-model="desc"></textarea>
+                    <br/><br/>
                 </div>
             </li>
         </ul>
@@ -82,16 +100,20 @@
     <div class="row">
         <div class="medium-5 large-5 columns namepanel sel">
             <div>
-                <h2>{{name}}</h2><br />
-                <h3>{{desc}}</h3><br />
+                <h2>{{name}}</h2><br/>
+
+                <h3>{{desc}}</h3><br/>
                 <h4><img src="images/location.png" class="small-icon">{{loca}}</h4>
                 <h4><img src="images/school.png" class="small-icon">{{edu}}</h4>
-                <h4><img src="images/work.png" class="small-icon" alt=""/>{{personaltag}}</h4><br />
+                <h4><img src="images/work.png" class="small-icon" alt=""/>{{personaltag}}</h4><br/>
             </div>
-            <span><a href="http://user.qzone.qq.com/{{qq}}"><img src="./images/qq.png" width="40px" alt=""/></a></span>
-            <span><a href="http://weibo.com/u/1966283157"><img src="./images/weibo.png" width="40px" alt=""/></a></span>
-            <span><a href="https://github.com/{{github}}"><img src="./images/github.png" width="40px" alt=""/></a></span>
-            <span><a href="mailto:{{email}}"><img src="./images/mail.png" width="40px" alt=""/></a></span>
+            <span><a href="http://user.qzone.qq.com/{{qq}}"><img src="./images/qq.png" width="40px"
+                                                                 alt="User's QQ"/></a></span>
+            <span><a href="http://weibo.com/u/1966283157"><img src="./images/weibo.png" width="40px"
+                                                               alt="User's Weibo"/></a></span>
+            <span><a href="https://github.com/{{github}}"><img src="./images/github.png" width="40px"
+                                                               alt="User's GitHub"/></a></span>
+            <span><a href="mailto:{{email}}"><img src="./images/mail.png" width="40px" alt="User's email address"/></a></span>
         </div>
     </div>
     <br/><br/>
@@ -103,16 +125,18 @@
         <div class="small-11 columns">
             <span data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000" id="qc">
                 <img id="qi" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
-                         src="./images/exchange.png" width="30px" alt=""/>
+                     src="./images/exchange.png" width="30px" alt=""/>
             </span>
+
             <div id="hover1" class="f-dropdown" data-dropdown-content>
                 <h5>Quote Exchange</h5>
             </div>
             &nbsp;&nbsp;
             <span data-dropdown="hover2" data-options="is_hover:true; hover_timeout:5000" id="cc">
                 <img id="ci" class="icon-covered" style="background-color: RGBA(16, 22, 26, 1);"
-                         src="./images/color.png" width="30px" alt=""/>
+                     src="./images/color.png" width="30px" alt=""/>
             </span>
+
             <div id="hover2" class="f-dropdown" data-dropdown-content>
                 <h5>Scheme Exchange</h5>
             </div>
@@ -124,17 +148,21 @@
 
 <section id="main-content" style="background-color: RGBA(40, 53, 63, 1);">
     <br/>
-    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-content">“Talk is cheap, show me the code”</h2>
-    <br />
-    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-author">– Linus Torvalds</h2>
+
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-content">“Talk
+        is cheap, show me the code”</h2>
+    <br/>
+
+    <h2 contenteditable="true" class="small-5 small-centered columns sel" style="color: white;" id="quote-author">–
+        Linus Torvalds</h2>
     <br/>
 </section>
- 
+
 <section id="main-content1" style="background-color: RGBA(40, 53, 63, 1);">
-    <div class="row"  ng-controller="MainCtrl">
+    <div class="row" ng-controller="MainCtrl">
         <div class="small-11 small-centered columns cardview" id="workprofile">
             <div id="cardheader">CURRENT ROLE</div>
-            <div placeholder="What's your latest role?"  contenteditable="true" class="job cur-per"></div>
+            <div placeholder="What's your latest role?" contenteditable="true" class="job cur-per"></div>
             <div contenteditable="true" placeholder="Which company?" class="comp cur-per"></div>
             <div contenteditable="true" placeholder="How long have you been in this role?" class="years cur-per"></div>
             <div contenteditable="true" placeholder="Your position or achievements" class="achie cur-per"></div>
@@ -149,21 +177,26 @@
     <div class="row">
         <div class="small-11 small-centered columns cardview" id="locate">
             <h3 class="input-prev">Here's where I'm living</h3>
+
             <h2 contenteditable="true" class="sel" placeholder="Type where you are..." id="locate-input"></h2>
-            <img id="locate-img" src="http://open.mapquestapi.com/staticmap/v4/getplacemap?key=Fmjtd%7Cluu82q6a25%2C7g%3Do5-94t29z&location=Chengdu&size=950,600&type=map&zoom=13&imagetype=jpeg&showicon=red_1-1" alt="This is the picture"/>
+            <img id="locate-img"
+                 src="http://open.mapquestapi.com/staticmap/v4/getplacemap?key=Fmjtd%7Cluu82q6a25%2C7g%3Do5-94t29z&location=Chengdu&size=950,600&type=map&zoom=13&imagetype=jpeg&showicon=red_1-1"
+                 alt="This is the picture"/>
         </div>
     </div>
 </section>
- 
+
 <section id="main-content3" style="background-color: RGBA(40, 53, 63, 1);">
-<div class="row">
-    <div class="small-11 small-centered columns colored-cardview" id="lnk-content" style="background-color:RGBA(34, 45, 54, 1);" ng-controller="lnkCtrl">
-        <span id="link-header">OTHER LINKS</span><a id="link-add" userlinks>
-        <img src="./images/add.png" alt="add button" width="22px"/></a><br/>
-        <div class="row" id="othersites">
+    <div class="row">
+        <div class="small-11 small-centered columns colored-cardview" id="lnk-content"
+             style="background-color:RGBA(34, 45, 54, 1);" ng-controller="lnkCtrl">
+            <span id="link-header">OTHER LINKS</span><a id="link-add" userlinks>
+            <img src="./images/add.png" alt="add button" width="22px"/></a><br/>
+
+            <div class="row" id="othersites">
+            </div>
         </div>
     </div>
-</div>
 </section>
 
 <footer class="zurb-footer-bottom">
