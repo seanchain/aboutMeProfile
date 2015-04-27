@@ -1,4 +1,4 @@
-var app = angular.module("app", []);
+var app = angular.module("app", ['ngFileUpload']);
 
 function MainCtrl($scope){
     $scope.count = 0;
@@ -7,6 +7,39 @@ function MainCtrl($scope){
 function lnkCtrl($scope){
     $scope.count = 0;
 }
+
+
+app.controller('MyCtrl', ['$scope', 'Upload', function ($scope, Upload){
+    $scope.$watch('files', function(){
+       $scope.upload($scope.files);
+    });
+
+    $scope.loader = {
+        loading : false
+    };
+
+    $scope.upload = function(files){
+        var username = document.getElementById("nametag").value;
+        if(files && files.length){
+            for(var i = 0; i < files.length; i ++){
+                var file = files[i];
+                Upload.upload({
+                    url:"http://www.chensihang.com/CSHiOS/upload.php",
+                    file:file,
+                    method:'POST',
+                    fileName:username
+                }).progress(function() {
+                    console.log("123");
+                    $scope.loader.loading = true;
+                }).success(function(data, status, headers, config){
+                    console.log(config.file.name);
+                    $scope.loader.loading = false;
+                    $("#homepage-hero").css("background-image", "url('http://www.chensihang.com/CSHiOS/portraits/chen.jpg')");
+                });
+            }
+        }
+    };
+}]);
 
 app.directive('workhistory', function($compile){
     return function(scope, element, attrs) {

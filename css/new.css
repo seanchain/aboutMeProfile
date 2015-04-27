@@ -25,3 +25,11 @@
 #pic-choose{
     visibility: hidden;
 }
+
+.thumb{
+    width: 200px;
+}
+
+.has-form span{
+    margin-right: 20px;
+}

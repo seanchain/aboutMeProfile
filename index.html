@@ -53,11 +53,13 @@
             <h1><a href="http://foundation.zurb.com/index.html">Personal Profile</a></h1>
         </li>
     </ul>
-    <section class="top-bar-section">
+    <section class="top-bar-section" ng-controller="MyCtrl">
         <ul>
             <li class="has-form">
-                <a href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</a>
-                <div id="editdrop" data-dropdown-content class="f-dropdown medium" aria-hidden="true" tabindex="-1">
+                <span href="#" class="small button" data-dropdown="editdrop" aria-controls="editdrop" aria-expanded="false">EDIT</span>
+                <span class="button small" id="changepic" ngf-select ngf-change="upload($files)">SWITCH BACKGROUND</span>
+                <span ng-show="loader.loading" style="color:white;">New Background Loading...</span>
+            <div id="editdrop" data-dropdown-content class="f-dropdown medium" aria-hidden="true" tabindex="-1">
                     <h1 class="bold">Edit Your Profile</h1>
                     <input type="text" placeholder="Your name Here"/>
                     <input type="text" placeholder="Your Location Here"/>
@@ -67,9 +69,8 @@
                     <input type="text" placeholder="Your Sina Weibo Here"/>
                     <input type="text" placeholder="Your GitHub account Here"/>
                     <input type="text" placeholder="Your email address Here"/>
+                    <input type="hidden" value="chen.jpg" id="nametag"/>
                     <textarea name="description" id="description" placeholder="Your personal descriptions here."></textarea>
-                    <div class="button info tiny" id="changepic">Change the Background</div>
-                    <input type="file" id="pic-choose"/>
                     <br /><br />
                 </div>
             </li>
@@ -174,6 +175,7 @@
 <script src="js/marketing.js"></script>
 <script src="js/jq-app.js"></script>
 <script src="js/angular.min.js"></script>
+<script src="js/ng-file-upload.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
