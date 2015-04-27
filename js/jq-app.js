@@ -134,22 +134,6 @@ $().ready(function () {
         $(visibleid1).attr('style', 'visibility:visible');
     });
 
-    //$('div').on('blur', ".link-cell-content", function () {
-    //    $('.lnk-del-btn').attr('style','visibility:hidden');
-    //    var $element = $(this);
-    //    if ($element.text() == "") {
-    //        $element.empty();
-    //    }
-    //});
-
-    //$('div').on('blur', ".link-cell-link", function () {
-    //    $('.lnk-del-btn').attr('style','visibility:hidden');
-    //    var $element = $(this);
-    //    if ($element.text() == "") {
-    //        $element.empty();
-    //    }
-    //});
-
     $('div').on('click', '.lnk-del-btn', function (){
         var idname = $(this).attr("id");
         idname = idname.split('-')[3];
@@ -197,6 +181,10 @@ $().ready(function () {
         var city = $("#locate-input").text();
         var des = "http://open.mapquestapi.com/staticmap/v4/getplacemap?key=Fmjtd%7Cluu82q6a25%2C7g%3Do5-94t29z&location=" + city + "&size=950,600&type=map&zoom=13&imagetype=jpeg&showicon=red_1-1";
         $("#locate-img").attr("src", des);
+    });
+
+    $("#changepic").on("click", function(){
+        $("#pic-choose").click();
     });
 
 });
