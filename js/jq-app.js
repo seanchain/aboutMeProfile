@@ -1,7 +1,10 @@
 /**
+ *
+ *
  * Created by seanchain on 3/30/15.
  */
 $().ready(function () {
+    alert(document.search);
     $("#qc").click(function(){
         var count = $("#quotecount").attr("value");
         count = parseInt(count) + 1;
@@ -89,6 +92,7 @@ $().ready(function () {
     $(".cur-per").focus(function(){
        $(this).css("background-color", "RGBA(177, 173, 177, 0.3)");
     });
+
 
 
     $(".cur-per").blur(function () {
